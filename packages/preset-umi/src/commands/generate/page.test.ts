@@ -121,7 +121,7 @@ describe('page generator', function () {
     for (const [i, f] of fileGenerations.entries()) {
       expect(generateFile).toHaveBeenNthCalledWith(i + 1, {
         data: { name: f.name, color: expect.anything(), cssExt: '.less' },
-        target: normalize(f.target),
+        target: join(f.target),
         path: expect.stringMatching(normalize(f.path)),
       });
     }
