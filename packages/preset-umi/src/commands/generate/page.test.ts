@@ -122,7 +122,7 @@ describe('page generator', function () {
       expect(generateFile).toHaveBeenNthCalledWith(i + 1, {
         data: { name: f.name, color: expect.anything(), cssExt: '.less' },
         target: join(f.target),
-        path: expect.stringMatching(join(f.path)),
+        path: expect.stringContaining(join(f.path)),
       });
     }
   }
