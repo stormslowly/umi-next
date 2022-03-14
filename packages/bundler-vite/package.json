@@ -21,7 +21,8 @@
   "scripts": {
     "build": "pnpm tsc",
     "build:deps": "pnpm esno ../../scripts/bundleDeps.ts",
-    "dev": "pnpm build -- --watch"
+    "dev": "pnpm build -- --watch",
+    "test": "jest -c ../../jest.config.ts"
   },
   "dependencies": {
     "@svgr/core": "6.2.1",
@@ -35,7 +36,7 @@
     "@types/rollup-plugin-visualizer": "4.2.1",
     "@types/svgo": "2.6.2",
     "@vitejs/plugin-legacy": "1.7.1",
-    "caniuse-lite": "1.0.30001314",
+    "caniuse-lite": "1.0.30001315",
     "express": "4.17.3",
     "less": "4.1.2",
     "rollup": "2.70.0",

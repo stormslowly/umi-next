@@ -96,13 +96,13 @@ export class PageGenerator {
     };
 
     await generateFile({
-      path: join(INDEX_TPL_PATH),
+      path: INDEX_TPL_PATH,
       target: join(absPagesPath, this.dir, `${this.name}.tsx`),
       data,
     });
 
     await generateFile({
-      path: join(LEES_TPL_PATH),
+      path: LEES_TPL_PATH,
       target: join(absPagesPath, this.dir, `${this.name}.less`),
       data,
     });
